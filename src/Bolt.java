@@ -14,7 +14,7 @@ public class Bolt implements Part{
     }
 
     public String getName(){
-
+        return "bolt";
     }
 
     public double getWeight(){

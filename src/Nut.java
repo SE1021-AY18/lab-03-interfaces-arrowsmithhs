@@ -8,15 +8,15 @@ public class Nut implements Part{
     }
 
     public double getCost(){
-        double cost=0.5*diameterInches
+        return 0.5*diameterInches;
     }
 
     public String getName(){
-
+        return "nut";
     }
 
     public double getWeight(){
-
+        return 0.01*diameterInches*diameterInches;
     }
 
     public void printBillOfMaterials(){

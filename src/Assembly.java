@@ -20,7 +20,7 @@ public class Assembly{
     }
 
     public String getName(){
-
+        return "assembly";
     }
 
     public double getWeight(){

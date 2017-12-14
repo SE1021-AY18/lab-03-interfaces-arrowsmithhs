@@ -20,7 +20,7 @@ public class Duplicate implements Part{
     }
 
     public String getName(){
-
+        return "duplicate";
     }
 
     public double getWeight(){
