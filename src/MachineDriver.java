@@ -2,7 +2,6 @@
  * SE1021
  * Winter 2017-2018
  * Lab 3 - Interfaces
- * Created: 12/7/2016
  */
 import java.util.Scanner;
 
