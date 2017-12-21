@@ -8,7 +8,7 @@ public class Nut implements Part{
     }
 
     public double getCost(){
-        return 0.5*diameterInches;
+        return USD_MULTIPLIER*diameterInches;
     }
 
     public String getName(){
@@ -16,7 +16,7 @@ public class Nut implements Part{
     }
 
     public double getWeight(){
-        return 0.01*diameterInches*diameterInches;
+        return LBS_MULTIPLIER*diameterInches*diameterInches;
     }
 
     public void printBillOfMaterials(){

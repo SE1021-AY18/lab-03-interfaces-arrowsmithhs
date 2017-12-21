@@ -10,7 +10,7 @@ public class Bolt implements Part{
     }
 
     public double getCost(){
-
+        return USD_MULTIPLIER*diameterInches*lengthInches;
     }
 
     public String getName(){
@@ -18,7 +18,7 @@ public class Bolt implements Part{
     }
 
     public double getWeight(){
-
+        return LBS_MULTIPLIER*diameterInches*diameterInches*lengthInches;
     }
 
     public void printBillOfMaterials(){
