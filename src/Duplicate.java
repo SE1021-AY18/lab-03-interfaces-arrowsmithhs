@@ -34,7 +34,17 @@ public class Duplicate implements Part{
         return identicalPart.getWeight()*numDuplicates;
     }
 
-    public void printBillOfMaterials() {
+    @Override
+    public String getDimensions() {
+        return identicalPart.getDimensions();
+    }
 
+    public void printBillOfMaterials() {
+        System.out.println("==========================\n" +
+                identicalPart.getDimensions()+identicalPart.getName()+"\n" +
+                "==========================\n" +
+                "Copies: "+numDuplicates+"\n" +
+                "Individual cost: "+this.getCost()+"\n" +
+                "Individual weight: "+this.getWeight());
     }
 }

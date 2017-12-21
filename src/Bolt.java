@@ -21,7 +21,17 @@ public class Bolt implements Part{
         return LBS_MULTIPLIER*diameterInches*diameterInches*lengthInches;
     }
 
-    public void printBillOfMaterials(){
+    public String getDimensions() {
+        return lengthInches+"x"+diameterInches;
+    }
 
+    public void printBillOfMaterials(){
+        System.out.println("==========================\n" +
+                this.getDimensions()+this.getName()+"\n" +
+                "==========================\n" +
+                "Length: "+lengthInches+"inches\n" +
+                "Diameter: "+diameterInches+"inches"+
+                "Cost: "+this.getCost()+
+                "Weight: "+this.getWeight()+" lbs");
     }
 }

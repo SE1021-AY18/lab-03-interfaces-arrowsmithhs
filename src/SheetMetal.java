@@ -28,9 +28,13 @@ public class SheetMetal implements Part{
         return LBS_MULTIPLIER*thicknessInches*widthInches*lengthInches;
     }
 
+    public String getDimensions(){
+        return lengthInches+"x"+widthInches+"x"+thicknessInches;
+    }
+
     public void printBillOfMaterials(){
         System.out.println("==========================\n" +
-                "12.0x12.0x0.25 sheet\n" +
+                this.getDimensions()+this.getName()+"\n" +
                 "==========================\n" +
                 "Length: "+lengthInches+"inches\n" +
                 "Width: "+widthInches+"inches"+

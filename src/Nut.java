@@ -19,7 +19,16 @@ public class Nut implements Part{
         return LBS_MULTIPLIER*diameterInches*diameterInches;
     }
 
-    public void printBillOfMaterials(){
+    public String getDimensions() {
+        return String.valueOf(diameterInches);
+    }
 
+    public void printBillOfMaterials(){
+        System.out.println("==========================\n" +
+                this.getDimensions()+this.getName()+"\n" +
+                "==========================\n" +
+                "Diameter: "+diameterInches+"inches\n" +
+                "Cost: "+this.getCost()+
+                "Weight: "+this.getWeight()+" lbs");
     }
 }
