@@ -29,6 +29,13 @@ public class SheetMetal implements Part{
     }
 
     public void printBillOfMaterials(){
-
+        System.out.println("==========================\n" +
+                "12.0x12.0x0.25 sheet\n" +
+                "==========================\n" +
+                "Length: "+lengthInches+"inches\n" +
+                "Width: "+widthInches+"inches"+
+                "Thickness: "+thicknessInches+"inches"+
+                "Cost: "+this.getCost()+
+                "Weight: "+this.getWeight()+" lbs");
     }
 }
